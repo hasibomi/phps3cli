@@ -1,0 +1,22 @@
+{
+    "name": "hasibomi/phps3cli",
+    "description": "Command line support for S3 for PHP projects.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hasibur Rahman Omi",
+            "email": "me@hasibomi.com"
+        }
+    ],
+    "bin": ["src/bin/phps3cli"],
+    "autoload": {
+        "psr-4": {
+            "Hasibomi\\PhpS3Cli\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "aws/aws-sdk-php": "^3.34"
+    }
+}

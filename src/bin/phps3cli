@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . "/../vendor/autoload.php";
+require_once __DIR__ . "/../vendor/vlucas/phpdotenv/src/Dotenv.php";
+require_once __DIR__ . "/../vendor/vlucas/phpdotenv/src/Loader.php";
+require_once __DIR__ . "/../vendor/vlucas/phpdotenv/src/Validator.php";
+
+$dotenv = new \Dotenv\Dotenv(__DIR__, "../../.env");
+$dotenv->overload();
+
+$cli = new Hasibomi\PhpS3Cli\PhpS3Cli();
