@@ -6,5 +6,5 @@ Command line support for S3 for PHP projects.
 (More features are coming)
 
 # Usage
-`vendor/bin/phps3cli` to get the list of commands
-`vendor/bin/phps3cli upload --bucket=bucket_name --dir=local_directory` 
+1. `vendor/bin/phps3cli` to get the list of commands
+2. `vendor/bin/phps3cli upload --bucket=bucket_name --dir=local_directory` 
