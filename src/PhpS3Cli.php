@@ -26,7 +26,7 @@ class PhpS3Cli extends PhpS3CliBase {
 					new Retrieve();
 				} else {
 					$this->colorize("Usage: ", "warning");
-					$this->colorize(" php s3cli list <bucket>", "success");
+					$this->colorize(" vendor/bin/s3cli list <bucket>", "success");
 				}
 				break;
 			
@@ -56,11 +56,11 @@ class PhpS3Cli extends PhpS3CliBase {
 		if ($args[0] === "help") {
 			if (count($args) === 2 && $args[1] === "upload") {
 				$this->colorize("Usage: ", "warning");
-				$this->colorize(" php s3cli upload --bucket=<bucketname> --dir=<local-directory>", "success");
+				$this->colorize(" vendor/bin/s3cli upload --bucket=<bucketname> --dir=<local-directory>", "success");
 				exit();
 			} else {
 				$this->colorize("Usage: ", "warning");
-				$this->colorize(" php s3cli help <command> <options>", "success");
+				$this->colorize(" vendor/bin/s3cli help <command> <options>", "success");
 				exit();
 			}
 

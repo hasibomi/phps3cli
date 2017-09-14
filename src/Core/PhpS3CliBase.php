@@ -18,8 +18,8 @@ abstract class PhpS3CliBase {
 	public function __construct()
 	{
 		$this->s3 = new \Aws\S3\S3Client([
-		    "region"  => "ap-southeast-1",
-		    "version"  => "latest"
+		    "region"  => $_ENV["S3_REGION"],
+		    "version"  => $_ENV["S3_VERSION"]
 		]);
 		$this->args = $this->getArguments();
 		$this->run($this->args);
